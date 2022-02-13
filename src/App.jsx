@@ -1,15 +1,16 @@
+import { useState } from "react";
 import "./App.css";
-import Contact from "./components/contact/Contact";
-import Intro from "./components/intro/Intro";
+import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
+import Home from "./pages/Home/Home";
 
 function App() {
+  const [handburger, setHandburger] = useState(false);
   return (
     <div>
-      <Topbar />
-
-      <Intro />
-      <Contact />
+      <Topbar handburger={handburger} setHandburger={setHandburger} />
+      <Sidebar handburger={handburger} />
+      <Home />
     </div>
   );
 }

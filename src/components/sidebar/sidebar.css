@@ -1,0 +1,43 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    width: 30%;
+    left: 70%;
+    background-color: withe;
+    position: absolute;
+    transition: all ease 1s;
+    background-color: #f5f5f5;
+    z-index: 999;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.sl-item {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    color: red;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.sl-item:hover {
+    background-color: red;
+    transition: all ease 0.5s;
+    color: white;
+}
+
+.active {
+    display: none;
+}

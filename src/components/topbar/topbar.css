@@ -7,7 +7,7 @@
     top: 0;
     font-family: "Handlee", cursive;
     z-index: 999;
-    background-color: #fff;
+    background-color: white;
 }
 
 .top-left,
@@ -27,42 +27,25 @@
 .top-icon {
     font-size: 24px;
     margin-right: 15px;
-    color: #444;
+    color: red;
     cursor: pointer;
-    animation: animateIcon 3s linear infinite;
-    text-shadow: 0 0 1px #0072ff, 0 0 3px #0072ff, 0 0 6px #0072ff, 0 0 8px #0072ff;
 }
 
-#instagram {
-    animation-delay: 0.3s;
+#instagram {}
+
+#instagram:hover {
+    animation: none;
 }
 
-#linkedin {
-    animation-delay: 0.7s;
-}
-
-#github {
-    animation-delay: 0.1s;
-}
-
-@keyframes animateIcon {
-    from {
-        filter: hue-rotate(90deg);
+@keyframes timtim {
+    50% {
+        color: white;
+        transform: scale(1.07);
     }
-    to {
-        filter: hue-rotate(180deg);
-    }
-}
-
-.top-img {
-    object-fit: cover;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    cursor: pointer;
 }
 
 .top-list {
+    color: red;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -71,15 +54,36 @@
 }
 
 .top-list-item {
-    font-weight: 300;
+    font-weight: 900;
     font-size: 18px;
     margin-right: 20px;
     cursor: pointer;
+    padding: 3px;
+    transition: all ease-in-out 0.3s;
 }
 
-.top-search {
-    font-size: 20px;
-    margin-left: 15px;
-    color: #666;
+.top-list-item:hover {
+    transform: rotateZ(20deg);
+}
+
+.top-list-item:active {
+    transform: scale(0.2);
+}
+
+.menu {
     cursor: pointer;
+    font-size: 40px;
+    color: red;
+    animation: bounce 2s infinite ease;
+}
+
+.menu:hover {
+    animation: none;
+    transform: scale(1.03);
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(4px);
+    }
 }

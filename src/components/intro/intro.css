@@ -1,0 +1,111 @@
+.intro {
+    height: calc(100vh - 50px);
+}
+
+.i-wrapper {
+    display: flex;
+}
+
+.i-left {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.i-l-title {
+    font-size: 40px;
+    font-family: "Handlee", cursive;
+}
+
+.i-l-title>span {
+    color: red;
+    font-size: 48px;
+    animation: animateTitle 3s infinite;
+}
+
+@keyframes animateTitle {
+    50% {
+        color: #0072ff;
+    }
+}
+
+.i-l-wrapper {
+    margin-top: 50px;
+    overflow: hidden;
+    height: 50px;
+}
+
+.i-l-skills {
+    height: 100%;
+    animation: animateSkills 7s infinite ease-in-out alternate;
+}
+
+.i-l-skills>div {
+    font-size: 40px;
+    font-weight: 900;
+    color: red;
+    font-family: "Jura", sans-serif;
+}
+
+@keyframes animateSkills {
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    75% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+.i-r-desc {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+.i-right {
+    flex: 1;
+}
+
+.border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+.card {
+    height: 379px;
+    width: 300px;
+    background: grey;
+    border-radius: 10px;
+    transition: 0.8s;
+    overflow: hidden;
+    background: black;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card0 {
+    background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") center center no-repeat;
+    background-size: 300px;
+}
+
+.card0:hover {
+    background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg") left center no-repeat;
+    background-size: 600px;
+}

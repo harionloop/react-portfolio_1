@@ -38,8 +38,8 @@ export default function Contact() {
             <input type="text" name="user_subject" placeholder="Subject" />
             <input type="email" name="user_email" placeholder="Email" />
             <textarea name="message" rows="5" placeholder="message" />
-            <button className="r-butt custom-btn" type="submit">
-              <span>Text mE</span>
+            <button className="r-butt" type="submit">
+              Contact
             </button>
           </form>
         </div>
